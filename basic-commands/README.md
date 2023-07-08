@@ -43,3 +43,22 @@ This shows you the current directory you're in
 
 `Get-Service -Name Audiosrv` 
 
+
+` Get-ExecutionPolicy -list`  
+
+`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine`  
+
+Set execution policy for cureent session lony
+` Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine`  
+
+
+` Copy-Item ".\demo_file.txt" -Destination "..\"`  
+
+` Remove-Item ..\demo_file.txt`  
+
+Cloud Shell Powershell  
+------------------------
+`Get-Module -ListAvailable`  
+`Get-Command -Module "Az.Compute"`  
+`Get-Help Start-AzVM`  
+`Help Start-AzVM -Examples`  
