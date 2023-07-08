@@ -31,3 +31,15 @@ This shows you the current directory you're in
 
 ` Get-Item *`  
 
+` Get-Content -Path .\demo_file.txt`
+
+`Get-Content -Path .\demo_file.txt -TotalCount 8`  
+` Get-Service`
+
+` Get-Service * | Measure`  
+
+`Get-Service -Name 'eventlog"`  
+` Get-Service -Name EventLog` 
+
+`Get-Service -Name Audiosrv` 
+
