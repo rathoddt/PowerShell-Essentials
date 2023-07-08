@@ -1,3 +1,23 @@
+PowerShell uses this verb-noun naming system,
+each cmdlet name consists of a standard verb with a specific noun.
+
+
+Nouns are very much like nouns in any other language,
+they describe specific types of objects that are important to systems
+administration.
+
+e.g.
+
+` Get-Service`
+`Start-Process notepad`  
+`Stop-Process -Name notepad`  
+
+`Get-Verb`  
+
+`Get-Command -Noun service`  
+
+
+
 `$PSVersionTable.PSVersion`  
 `history`  
 `$M=Get-Command * | Measure`  
