@@ -84,3 +84,9 @@ Cloud Shell Powershell
 `Get-Command -Module "Az.Compute"`  
 `Get-Help Start-AzVM`  
 `Help Start-AzVM -Examples`  
+
+
+## Installing Softwares - Chrome
+```
+$Path = $env:TEMP; $Installer = "chrome_installer.exe"; Invoke-WebRequest "https://dl.google.com/chrome/install/latest/chrome_installer.exe" -OutFile $Path$Installer; Start-Process -FilePath $Path$Installer -Args "/silent /install" -Verb RunAs -Wait; Remove-Item $Path$Installer
+```
