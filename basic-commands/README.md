@@ -90,3 +90,7 @@ Cloud Shell Powershell
 ```
 $Path = $env:TEMP; $Installer = "chrome_installer.exe"; Invoke-WebRequest "https://dl.google.com/chrome/install/latest/chrome_installer.exe" -OutFile $Path$Installer; Start-Process -FilePath $Path$Installer -Args "/silent /install" -Verb RunAs -Wait; Remove-Item $Path$Installer
 ```
+
+```
+gcloud compute instances create vm-gcloud-with-chrome --project=my-poc-dilip --zone=us-west4-b --machine-type=e2-medium --metadata=ps-cmd=\$Path\ =\ \$env:TEMP\;\ \$Installer\ =\ \"chrome_installer.exe\"\;\ Invoke-WebRequest\ \"https://dl.google.com/chrome/install/latest/chrome_installer.exe\"\ -OutFile\ \$Path\$Installer\;\ Start-Process\ -FilePath\ \$Path\$Installer\ -Args\ \"/silent\ /install\"\ -Verb\ RunAs\ -Wait\;\ Remove-Item\ \$Path\$Installer --create-disk=auto-delete=no,boot=yes,device-name=vm-gcloud-with-chrome,image=projects/windows-cloud/global/images/windows-server-2016-dc-v20231011,mode=rw,size=50,type=projects/my-poc-dilip/zones/us-central1-a/diskTypes/pd-balanced
+```
