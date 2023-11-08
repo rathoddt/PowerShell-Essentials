@@ -8,4 +8,3 @@ Write-Host "Process ID: ($Process.ProcessId)"
 Write-Host(Get-NetIPAddress)
 
 
-
