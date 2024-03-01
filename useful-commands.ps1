@@ -1,0 +1,1 @@
+Set-TimeZone -Name "India Standard Time"
