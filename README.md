@@ -1,9 +1,11 @@
 # PowerShell-Essentials
 ### One Liners
 ```
- while(1){cls;  kubectl get po; sleep 2}
+while(1){cls;  kubectl get po; sleep 2}
 
 while(1){ curl http://127.0.0.1:30080/api/vehicles/driver/Huddersfield%20Truck%20A | Select-Object -ExpandProperty Content;  sleep 1}
+#Linux way
+while true; do curl http://127.0.0.1:30080/api/vehicles/driver/Huddersfield%20Truck%20A; echo; sleep 0.5; done
 ```
 
 ```
