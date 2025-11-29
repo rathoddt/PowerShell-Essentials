@@ -1,5 +1,8 @@
 # PowerShell-Essentials
-
+### One Liners
+```
+ while(1){cls;  kubectl get po; sleep 2}
+```
 
 ```
 powershell -ExecutionPolicy Bypass -File .\printing-values.ps1
@@ -20,3 +23,4 @@ powershell -ExecutionPolicy Bypass -File .\printing-values.ps1
             - httpd
             - apache
           state: prestent
+        
